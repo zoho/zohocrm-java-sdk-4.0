@@ -24,7 +24,7 @@ License
     limitations under the License.
 
 ## Latest Version
-- [1.0.0-beta](#versions/1.0.0-beta/README.md)
+- [1.0.0-beta](/versions/1.0.0-beta/README.md)
 
     - Beta version of CRM v4 APIs.
 
@@ -34,7 +34,7 @@ For older versions, please [refer](https://github.com/zoho/zohocrm-java-sdk-4.0/
 ## Including the SDK in your project
 You can include the SDK to your project using:
 - Maven
-- [Gradle](#versions/1.0.0-beta/README.md)
+- [Gradle](/versions/1.0.0-beta/README.md)
 
 For including the latest [version](https://github.com/zoho/zohocrm-java-sdk-4.0/releases) using Maven, include the following in your **pom.xml** file, which will get created once your **Java** project is created using Maven.
 
@@ -54,4 +54,4 @@ For including the latest [version](https://github.com/zoho/zohocrm-java-sdk-4.0/
     </dependencies>
     ```
 
-For more details, kindly refer [here](#versions/1.0.0-beta/README.md).
+For more details, kindly refer [here](/versions/1.0.0-beta/README.md).
