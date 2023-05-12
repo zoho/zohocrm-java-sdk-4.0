@@ -38,29 +38,28 @@ License
 
     - Java SDK improved to support the following new APIs
 
-        - AssociateEmail
-        - AvailableCurrencies
-        - backup
-        - BusinessHours
-        - cancelMeetings
-        - dealContactRoles
-        - DownloadEmailAttachmnets
-        - DownloadInlineImagesofanaEmail
-        - EmailSharing
-        - EmailRelatedrecords.
-        - FieldMapDependency
-        - fromAddresses
-        - Holidays
-        - MassChangeOwner
-        - MassConvert
-        - MassDeleteCVID
-        - Portals
-        - PortalInvite
-        - ShiftHours
-        - UserGroups
-        - UserTerritories
-        - UserType
-        - UserTypeUsers
+        - [AssociateEmail](https://www.zoho.com/crm/developer/docs/api/v4/associate-email.html)
+        - [Backup](https://www.zoho.com/crm/developer/docs/api/v4/get-backup-info.html)
+        - [BusinessHours](https://www.zoho.com/crm/developer/docs/api/v4/get-business-hours.html)
+        - [CancelMeetings](https://www.zoho.com/crm/developer/docs/api/v4/meeting-cancel.html)
+        - [DealContactRoles](https://www.zoho.com/crm/developer/docs/api/v4/get-contact-roles-of-a-specific-deal.html)
+        - [DownloadEmailAttachmnets](https://www.zoho.com/crm/developer/docs/api/v4/download-email-attachments.html)
+        - [DownloadInlineImagesofanEmail](https://www.zoho.com/crm/developer/docs/api/v4/download-inline-images.html)
+        - [EmailSharing](https://www.zoho.com/crm/developer/docs/api/v4/get-email-shared-details.html)
+        - [EmailRelatedrecords](https://www.zoho.com/crm/developer/docs/api/v4/get-email-rel-list.html)
+        - [FieldMapDependency](https://www.zoho.com/crm/developer/docs/api/v4/get-map-dependency.html)
+        - [fromAddresses](https://www.zoho.com/crm/developer/docs/api/v4/get-from-addresses-list.html)
+        - [Holidays](https://www.zoho.com/crm/developer/docs/api/v4/get-holidays.html)
+        - [MassChangeOwner](https://www.zoho.com/crm/developer/docs/api/v4/mass-change-owner.html)
+        - [MassConvert](https://www.zoho.com/crm/developer/docs/api/v4/mass-convert-lead.html)
+        - [MassDeleteCVID](https://www.zoho.com/crm/developer/docs/api/v4/mass-delete.html)
+        - [Portals](https://www.zoho.com/crm/developer/docs/api/v4/get-portals.html)
+        - [PortalInvite](https://www.zoho.com/crm/developer/docs/api/v4/invite-user.html)
+        - [ShiftHours](https://www.zoho.com/crm/developer/docs/api/v4/get-shift-hours.html)
+        - [UserGroups](https://www.zoho.com/crm/developer/docs/api/v4/get-user-groups.html)
+        - [UserTerritories](https://www.zoho.com/crm/developer/docs/api/v4/get-user-territories.html)
+        - [UserType](https://www.zoho.com/crm/developer/docs/api/v4/get-user-types.html)
+        - [UserTypeUsers](https://www.zoho.com/crm/developer/docs/api/v4/get-users-user-type.html)
 	
 
 - [1.0.0-beta](/versions/1.0.0-beta/README.md)
