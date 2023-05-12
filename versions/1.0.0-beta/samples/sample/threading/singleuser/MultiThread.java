@@ -46,7 +46,7 @@ public class MultiThread extends Thread
 
 		Environment env = USDataCenter.PRODUCTION;
 
-		UserSignature user1 = new UserSignature("abc1@zohocorp.com");
+		UserSignature user1 = new UserSignature("abc1@zoho.com");
 
 		TokenStore tokenstore = new FileStore("/usr/java_sdk_token.txt");
 

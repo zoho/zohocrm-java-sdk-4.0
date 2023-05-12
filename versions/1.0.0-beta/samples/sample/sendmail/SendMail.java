@@ -59,15 +59,15 @@ public class SendMail
 			EmailTemplate template = new EmailTemplate();
 			template.setId(365239724971L);
 			userAddressFrom.setUserName("patricia Boyle");
-			userAddressFrom.setEmail("patricia.a@zohocorp.com");
+			userAddressFrom.setEmail("patricia.a@zoho.com");
 			userAddressTo.setUserName("Jason Smith");
-			userAddressTo.setEmail("patricia.a@zohocorp.com");
+			userAddressTo.setEmail("patricia.a@zoho.com");
 			userAddressCc.setUserName("Jasweon Smith");
-			userAddressCc.setEmail("patricia.a@zohocorp.com");
+			userAddressCc.setEmail("patricia.a@zoho.com");
 			userAddressBcc.setUserName("Jassdon Smith");
-			userAddressBcc.setEmail("patricia.a@zohocorp.com");
+			userAddressBcc.setEmail("patricia.a@zoho.com");
 			userAddressReplyTo.setUserName("Jassdon Smith");
-			userAddressReplyTo.setEmail("patricia.a@zohocorp.com");
+			userAddressReplyTo.setEmail("patricia.a@zoho.com");
 
 			mail.setFrom(userAddressFrom);
 			ArrayList<To> userAddressesTo = new ArrayList<To>();
