@@ -90,7 +90,7 @@ public class MultiThread extends Thread
 
 		Environment environment = USDataCenter.PRODUCTION;
 
-		UserSignature user2 = new UserSignature("abc1@zohocorp.com");
+		UserSignature user2 = new UserSignature("abc1@zoho.com");
 
 		Token token2 = new OAuthToken.Builder().clientID("1000.xxxxx").clientSecret("xxxxxx").refreshToken("1000.xxx.xxxx").build();
 

@@ -24,6 +24,45 @@ License
     limitations under the License.
 
 ## Latest Version
+- [1.0.0](/versions/1.0.0/README.md)
+
+    - Java SDK upgraded to support v4 APIs.
+
+    - Structural changes to aid the process of SDK configuration and initialization user-friendly.
+
+	  - Handled Token Persistence
+
+	  - Updated UserSignature from Mandatory to Optional.
+
+      - user_mail key in DBStore and FileStore is updated to user_name.
+
+    - Java SDK improved to support the following new APIs
+
+        - AssociateEmail
+        - AvailableCurrencies
+        - backup
+        - BusinessHours
+        - cancelMeetings
+        - dealContactRoles
+        - DownloadEmailAttachmnets
+        - DownloadInlineImagesofanaEmail
+        - EmailSharing
+        - EmailRelatedrecords.
+        - FieldMapDependency
+        - fromAddresses
+        - Holidays
+        - MassChangeOwner
+        - MassConvert
+        - MassDeleteCVID
+        - Portals
+        - PortalInvite
+        - ShiftHours
+        - UserGroups
+        - UserTerritories
+        - UserType
+        - UserTypeUsers
+	
+
 - [1.0.0-beta](/versions/1.0.0-beta/README.md)
 
     - Beta version of CRM v4 APIs.
@@ -34,9 +73,9 @@ For older versions, please [refer](https://github.com/zoho/zohocrm-java-sdk-4.0/
 ## Including the SDK in your project
 You can include the SDK to your project using:
 - Maven
-- [Gradle](/versions/1.0.0-beta/README.md)
+- [Gradle](/versions/1.0.0/README.md)
 
-For including the latest [version](https://github.com/zoho/zohocrm-java-sdk-4.0/releases/tag/1.0.0-beta) using Maven, include the following in your **pom.xml** file, which will get created once your **Java** project is created using Maven.
+For including the latest [version](https://github.com/zoho/zohocrm-java-sdk-4.0/releases/tag/1.0.0) using Maven, include the following in your **pom.xml** file, which will get created once your **Java** project is created using Maven.
 
     ```xml
     <repositories>
@@ -49,9 +88,9 @@ For including the latest [version](https://github.com/zoho/zohocrm-java-sdk-4.0/
         <dependency>
             <groupId>com.zoho.crm</groupId>
             <artifactId>zohocrmsdk-4-0</artifactId>
-            <version>1.0.0-beta</version>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
     ```
 
-For more details, kindly refer [here](/versions/1.0.0-beta/README.md).
+For more details, kindly refer [here](/versions/1.0.0/README.md).
