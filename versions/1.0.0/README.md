@@ -579,62 +579,190 @@ All other exceptions such as SDK anomalies and other unexpected behaviours are t
 
 ### GET Requests
 
-- The **getObject()** of the returned APIResponse instance returns the response handler interface.
+- The **getObject()** of the returned APIResponse instance returns the response as follows.
 
-- The **ResponseHandler interface** interface encompasses the following
-  - **ResponseWrapper class** (for **application/json** responses)
-  - **FileBodyWrapper class** (for File download responses)
-  - **APIException class**
+- Most of the APIs follows the **Common** Structure as below.
 
-- The **CountHandler interface** encompasses the following
-  - **CountWrapper class** (for **application/json** responses)
-  - **APIException class**
+  - The **ResponseHandler interface** encompasses the following
+    - **ResponseWrapper class** (for **application/json** responses)
+    - **FileBodyWrapper class** (for File download responses)
+    - **APIException class**
 
-- The **DeletedRecordsHandler interface** encompasses the following
-  - **DeletedRecordsWrapper class** (for **application/json** responses)
-  - **APIException class**
 
-- The **DownloadHandler interface** encompasses the following
-  - **FileBodyWrapper class** (for File download responses)
-  - **APIException class**
+- Some of the APIs follow the **Particular** Structure as below.
 
-- The **MassUpdateResponseHandler interface** encompasses the following
-  - **MassUpdateResponseWrapper class** (for **application/json** responses)
-  - **APIException class**
+  - The **ResponseHandler interface** encompasses the following
+    - **BodyWrapper class** (for **application/json** responses in **backup** API , holds the instance of **Backup class**)
+    - **HistoryWrapper class** (for **application/json** responses in **backup** API, holds the list of instances of **History class** and instance of **Info class**)
+    - **UrlsWrapper class** (for **application/json** responses in **backup** API, holds the instance of **Urls class**)
+    - **BodyWrapper class** (for **application/json** responses in **ContactRoles** API, holds the list of instances of **ContactRole class**)
+    - **BodyWrapper class** (for **application/json** responses in **Currencies** API, holds the list of instances of **Currency class**)
+    - **BodyWrapper class** (for **application/json** responses in **CustomView** API, holds the list of instances of **CustomView class** and instance of **Info class** )
+    - **BodyWrapper class** (for **application/json** responses in **DealContactroles** API, holds the list of instances of **Data class** and instance of **Info class** )
+    - **BodyWrapper class** (for **application/json** responses in **FieldMapDependency** API, holds the list of instances of **MapDependency class** and instance of **Info class** )
+    - **BodyWrapper class** (for **application/json** responses in **Fields** API, holds the list of instances of **Field class**)
+    - **Holidays class** (for **applicatiom/json** responses in **Holidays** API, holds the list of instances of **Holiday class** and instance of **Info class**)
+    - **BodyWrapper class** (for **application/json** responses in **Pipeline** API, holds the list of instances of **Pipeline class**)
+    - **BodyWrapper class** (for **application/json** responses in **Portals** API, holds the list of instances of **Portals class**)
+    - **ProfieWrapper class** (for **application/json** responses in **Profiles** API, holds the list of instances of **Profile class** and instance of **Info class**)
+    - **ConversionOptionsResponseWrapper class**  (for **application/json** responses in **Record** API, holds the instance of **ConversionOption class**)
+    - **BodyWrapper class** (for **application/json** responses in **Roles** API, holds the list of instances of **Role class**)
+    - **EntityResponseWrapper class** (for **application/json** responses in **ScoringRules** API, holds the list of instances of **EntityScore class** and instance of **Info class**)
+    - **BodyWrapper class** (for **application/json** responses in **Tags** API, holds the list of instances of **Tag class** and instance of **Info class**)
+    - **BodyWrapper class** (for **application/json** responses in **Territories** API, holds the list of instances of **Territory class** and instance of **Info class**)
+    - **BodyWrapper class** (for **application/json** responses in **UserGroups** API, holds the list of instances of **Groups class** and instance of **Info class**)
+    - **SourcesCountWrapper class** (for **application/json** responses in **UserGroups** API, holds the List of instances of **SourceCount class**)
+    - **SourcesWrapper class** (for **application/json** responses in **Usergroups** APi, holds the List of instances of **Sources class** and instance of **Info class**)
+    - **BodyWrapper class** (for **application/json** responses in **Users** API, holds the list of instances of **User class** and instance of **Info class**)
+    - **BodyWrapper class** (for **application/json** responses in **UsersUnavailability** API, holds the list of instances of **UserUnavailability class** and instance of **Info class**) 
+    - **BodyWrapper class** (for **application/json** responses in **UserType** API, holds the list of instances of **UserType class**)
+    - **BodyWrapper class** (for **application/json** responses in **UserTypeUsers** API, holds the list of instances of **Users class** and instance of **Info class**)
+    - **BodyWrapper class** (for **application/json** responses in **Variables** API, holds the list of instances of **Variable class**)
+
+
+  - The **ResponseWrapper interface** in **BulkWrite** API encompasses the following
+    - **BulkWriteResponse class** (for **application/json** responses)
+    - **APIException class**
+
+  - The **CountHandler interface** encompasses the following
+    - **CountWrapper class** (for **application/json** responses in **Record** API, holds the Long **count**)
+    - **APIException class**
+
+  - The **DeletedRecordsHandler interface** encompasses the following
+    - **DeletedRecordsWrapper class** (for **application/json** responses in **Record** API, holds the list of instances of **DeletedRecord class** and instance of **Info class**)
+    - **APIException class**
+
+  - The **DownloadHandler interface** encompasses the following
+    - **FileBodyWrapper class** (for File download responses)
+    - **APIException class**
+
+  - The **MassUpdateResponseHandler interface** encompasses the following
+    - **MassUpdateResponseWrapper class** (for **application/json** responses in **Record** API, holds the list of instances of **MassUpdateResponse interface**)
+    - **APIException class**
+
+  - The **MassUpdateResponse interface** encompasses of following
+    - **MassUpdate class** (for **application/json** responses)
+    - **APIException class**
+
+  - The **SingleResponseHandler interface** in **Modules** API  encompasses the following
+    - **SingleResponseWrapper class** (for **application/json** responses holds the list of instances of **ModuleMeta class**)
+    - **APIException class**
+
+  - The **JobHandler interface** in **UserGroups** API encompasses the following
+    - **JobsWrapper class** (for **application/json** responses, holds the list of instances of **JobResponse interface**)
+    - **APIException class**
+
+  - The **JobResponse interface** encompasses the following
+    - **Jobs class** (for **application/json** responses)
+    - **APIException class**
+
+  - The **ValidationHandler interface** in **UserTerritories** API encomposses the following
+    - **ValidationWrapper class** (for **application/json** responses, holds the list of instances of **ValidationGroup interface**)
+    - **APIException class**
+
+  - The **ValidationGroup interface** in **UserTerritories** API encompasses the following
+    - **Validation class**
+    - **BulkValidation class**
 
 ### POST, PUT, DELETE Requests
 
-- The **getObject()** of the returned APIResponse instance returns the action handler interface.
+- The **getObject()** of the returned APIResponse instance returns the response as follows.
 
-- The **ActionHandler interface** encompasses the following
-  - **ActionWrapper class** (for **application/json** responses)
-  - **APIException class**
+- Most of the APIs follows the **Common** Structure as.
 
-- The **ActionWrapper class** contains **Property/Properties** that may contain one/list of **ActionResponse interfaces**.
+  - The **ActionHandler interface** encompasses the following
+    - **ActionWrapper class** (for **application/json** responses)
+    - **APIException class**
 
-- The **ActionResponse interface** encompasses the following
-  - **SuccessResponse class** (for **application/json** responses)
-  - **APIException class**
+  - The **ActionWrapper class** contains **Property/Properties** that may contain one/list of **ActionResponse interfaces**.
 
-- The **ActionHandler interface** encompasses the following
-  - **ActionWrapper class** (for **application/json** responses)
-  - **APIException class**
+  - The **ActionResponse interface** encompasses the following
+    - **SuccessResponse class** (for **application/json** responses)
+    - **APIException class**
 
-- The **RecordActionHandler interface** encompasses the following
-  - **RecordActionWrapper class** (for **application/json** responses)
-  - **APIException class**
+- Some of the APIs follow the **Particular** Structure as.
 
-- The **BaseCurrencyActionHandler interface** encompasses the following
-  - **BaseCurrencyActionWrapper class** (for **application/json** responses)
-  - **APIException class**
+  - The **ActionHandler interface** encompasses the following
+    - **ActionWrapper class** (for **application/json** responses)
+    - **APIException class**
 
-- The **MassUpdateActionHandler interface** encompasses the following
-  - **MassUpdateActionWrapper class** (for **application/json** responses)
-  - **APIException class**
+  - The **ActionWrapper class** contains **Property/Properties** that may contain one/list of **ActionResponse interface**.
 
-- The **ConvertActionHandler interface** encompasses the following
-  - **ConvertActionWrapper class** (for **application/json** responses)
-  - **APIException class**
+  - The **ActionResponse interface** encompasses the following
+    - **SUCCESS class** (for **application/json** responses in **AssociateEmail** API)
+    - **BusinessHoursCreated class** (for **application/json** responses in **BusinessHours** API)
+    - **MassDeleteScheduled class** (for **application/json** responses in **MassDeleteCVID** API)
+    - **RecordDeleted class** (for **application/json** responses in **MassDeleteCVID** API)*
+    - **Success class** (for **application/json** responses in **PortalInvite** API)
+    - **SuccessResponseTag class** (for **application/json** responses in **Tags** API)
+    - **UpdateSuccessResponse class** (for **Application/json** responses in **Taxes** API)
+    - **APIEXception class**
+
+  - The **RecordActionHandler interface** encompasses the following
+    - **RecordActionWrapper class** (for **application/json** responses in **Tags** API, holds the list of instance of **RecordActionResponse interface**, Boolean **wfScheduler**, String **successCount** and Boolean **lockedCount**)
+    - **APIException class**
+
+  - **RecordActionResponse interface** encompasses the following
+    - **RecordSuccessResponse class** (for **application/json** responses)
+    - **APIException class**
+
+  - The **ActionHandler interface** in **Currencies** API encompasses the following
+    - **BaseCurrencyActionWrapper class** (for **application/json** responses)
+    - **APIException class**
+
+  - The **BaseCurrencyActionWrapper class** contains **Property/Properties** that contain **BaseCurrencyActionResponse interface**.
+
+  - The **BaseCurrencyActionResponse interface** encompasses the following
+    - **SuccessResponse class** (for **application/json** responses)
+    - **APIException class**
+
+  - The **MassUpdateActionHandler interface** encompasses the following
+    - **MassUpdateActionWrapper class** (for **application/json** responses in **Record** API, holds the list of instances of **MassUpdateActionResponse interface**)
+    - **APIException class**
+
+  - The **MassUpdateActionResponse interface** encompasses of following
+    - **MassUpdateSuccessResponse class** (for **application/json** responses)
+    - **APIException class**
+
+  - The **FileHandler interface** in **Record** API encompasses the following 
+    - **SuccessResponse class** (for **application/json** responses)
+    - **APIException class**
+    
+  - The **DeleteActionHandler interface** encompasses the following
+    - **DeleteActionWrapper class** (for **application/json** responses in **ShareRecords** API, holds the instance of **DeleteActionResponse interface**)
+    - **APIException class**
+  - The **DeleteActionResponse interface** encompasses the following
+    - **SuccessResponse class** (for **application/json** responses)
+    - **APIException class**
+
+  - The **TransferActionHandler interface** in **UserTerritories** API encompasses the following
+    - **TransferActionWrapper class** (fro **application/json** responses , holds the list of instances of **TransferActionResponse interface**)
+
+  - The **TransferActionResponse interface** encompasses the following 
+    - **SuccessResponse class** (for **application/json** responses)
+    - **APIException class**
+
+  - The **TransferHandler interface** in **Userterritories** API encompasses the following
+    - **ActionWrapper class** (for **application/json** responses)
+    - **APIException class**
+
+  - The **ActionHandler interface** in **Territories** API encompasses the following
+    - **RActionWrapper class** (for **application/json** responses holds the list of instances of **ActioResponse interface**)
+    - **RMandatoryErrorWrapper class** (for **application/json** responses holds the list of instances of **ActioResponse interface**)
+    - **SuccessWrapper class** (for **application/json** responses holds the list of instances of **ActioResponse interface**)
+    - **APIException class** 
+
+  - The **ActionResponse interface** in **Territories** API encompasses the following
+    - **Success class** (for **application/json** responses)
+    - **APIException class**
+
+  - The **TransferActionHandler interface** in **Pipeline** API encompasses the following
+    - **TransferPipelineActionWrapper class** (for **application/json** responses, holds the list of insatnces of **TransferActionResponse interface**)
+    - **APIException class**
+  
+  - The **TransferActionResponse interface** in **Pipeline** API encompasses the following
+    - **TransferSuccess class** (for **application/json** responses)
+    - **APIException class**
 
 ## Threading in the Java SDK
 
