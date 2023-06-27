@@ -24,6 +24,11 @@ License
     limitations under the License.
 
 ## Latest Version
+- [2.0.0](/versions/2.0.0/README.md)
+    
+    - Users APIs Issue fixed.
+        - Handled ***phone*** and ***mobile*** field datatype.
+
 - [1.0.0](/versions/1.0.0/README.md)
 
     - Java SDK upgraded to support v4 APIs.
@@ -72,9 +77,9 @@ For older versions, please [refer](https://github.com/zoho/zohocrm-java-sdk-4.0/
 ## Including the SDK in your project
 You can include the SDK to your project using:
 - Maven
-- [Gradle](/versions/1.0.0/README.md)
+- [Gradle](/versions/2.0.0/README.md)
 
-For including the latest [version](https://github.com/zoho/zohocrm-java-sdk-4.0/releases/tag/1.0.0) using Maven, include the following in your **pom.xml** file, which will get created once your **Java** project is created using Maven.
+For including the latest [version](https://github.com/zoho/zohocrm-java-sdk-4.0/releases/tag/2.0.0) using Maven, include the following in your **pom.xml** file, which will get created once your **Java** project is created using Maven.
 
     ```xml
     <repositories>
@@ -87,9 +92,9 @@ For including the latest [version](https://github.com/zoho/zohocrm-java-sdk-4.0/
         <dependency>
             <groupId>com.zoho.crm</groupId>
             <artifactId>zohocrmsdk-4-0</artifactId>
-            <version>1.0.0</version>
+            <version>2.0.0</version>
         </dependency>
     </dependencies>
     ```
 
-For more details, kindly refer [here](/versions/1.0.0/README.md).
+For more details, kindly refer [here](/versions/2.0.0/README.md).
