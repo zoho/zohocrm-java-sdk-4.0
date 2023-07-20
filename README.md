@@ -1,4 +1,4 @@
-# Zoho CRM Java SDK
+# ZOHO CRM JAVA SDK 4.0 for API version 4
 
 The Java SDK for Zoho CRM allows developers to easily create Java applications that can be integrated with Zoho CRM. This SDK serves as a wrapper for the REST APIs, making it easier to access and utilize the services of Zoho CRM. 
 Authentication to access the CRM APIs is done through OAuth2.0, and the authentication process is streamlined through the use of the Java SDK. The grant and access/refresh tokens are generated and managed within the SDK code, eliminating the need for manual handling during data synchronization between Zoho CRM and the client application.
@@ -31,11 +31,11 @@ License
     - Java SDK DBStore, FileStore, and OAuthToken class Enhancement.
     - Changed ShiftHour timezone field type.
     - Changed SendMail Attachments type.
-    - Update __Construct() function:
-        - DownloadAttachmentsOperations
-        - DownloadInlineImagesOperations
-        - PortalInviteOperations
-        - UserTypeUsersOperations
+    - Update Class construct() method:
+        - [DownloadAttachmentsOperations](https://github.com/zoho/zohocrm-java-sdk-4.0/commit/f1c11adebe78c84fd3a4638eea9ea688d05e798a#diff-619e50c388817911d30b89daf36281aba7254328d7178f77e466cb714800eb00)
+        - [DownloadInlineImagesOperations](https://github.com/zoho/zohocrm-java-sdk-4.0/commit/f1c11adebe78c84fd3a4638eea9ea688d05e798a#diff-9c92c49c3d44570c8e1488567c4d9120bafa0ef034583f77af614567b7207a3d)
+        - [PortalInviteOperations](https://github.com/zoho/zohocrm-java-sdk-4.0/commit/f1c11adebe78c84fd3a4638eea9ea688d05e798a#diff-f39717affe9d2a08435cf070f7d0fea072755c655f94df015a25fb59da9d8552)
+        - [UserTypeUsersOperations](https://github.com/zoho/zohocrm-java-sdk-4.0/commit/f1c11adebe78c84fd3a4638eea9ea688d05e798a#diff-ef524ec4b6bb73c0ca5cc473435a8fde97dbaf2e6937df22c4d7fb01da868519)
 
 - [2.0.0](/versions/2.0.0/README.md)
     
