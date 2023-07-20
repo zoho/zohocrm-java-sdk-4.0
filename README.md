@@ -31,7 +31,7 @@ License
     - Java SDK DBStore, FileStore, and OAuthToken class Enhancement.
     - Changed ShiftHour timezone field type.
     - Changed SendMail Attachments type.
-    - Update Class construct() method:
+    - Update Class constructor() method:
         - [DownloadAttachmentsOperations](https://github.com/zoho/zohocrm-java-sdk-4.0/commit/f1c11adebe78c84fd3a4638eea9ea688d05e798a#diff-619e50c388817911d30b89daf36281aba7254328d7178f77e466cb714800eb00)
         - [DownloadInlineImagesOperations](https://github.com/zoho/zohocrm-java-sdk-4.0/commit/f1c11adebe78c84fd3a4638eea9ea688d05e798a#diff-9c92c49c3d44570c8e1488567c4d9120bafa0ef034583f77af614567b7207a3d)
         - [PortalInviteOperations](https://github.com/zoho/zohocrm-java-sdk-4.0/commit/f1c11adebe78c84fd3a4638eea9ea688d05e798a#diff-f39717affe9d2a08435cf070f7d0fea072755c655f94df015a25fb59da9d8552)
