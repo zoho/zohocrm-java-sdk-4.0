@@ -5,7 +5,7 @@ import com.zoho.crm.api.util.Model;
 import java.util.HashMap;
 import java.util.Map;
 
-public class APIException implements Model, ResponseHandler
+public class APIException implements ResponseHandler, Model
 {
 	private Choice<String> code;
 
