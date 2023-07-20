@@ -24,6 +24,19 @@ License
     limitations under the License.
 
 ## Latest Version
+
+- [3.0.0](/versions/3.0.0/README.md)
+
+    - Java SDK support TimeZone type.
+    - Java SDK DBStore, FileStore, and OAuthToken class Enhancement.
+    - Changed ShiftHour timezone field type.
+    - Changed SendMail Attachments type.
+    - Update __Construct() function:
+        - DownloadAttachmentsOperations
+        - DownloadInlineImagesOperations
+        - PortalInviteOperations
+        - UserTypeUsersOperations
+
 - [2.0.0](/versions/2.0.0/README.md)
     
     - Users APIs Issue fixed.
@@ -77,9 +90,10 @@ For older versions, please [refer](https://github.com/zoho/zohocrm-java-sdk-4.0/
 ## Including the SDK in your project
 You can include the SDK to your project using:
 - Maven
-- [Gradle](/versions/2.0.0/README.md)
+- [Gradle](/versions/3.0.0/README.md)
+- [Download SDK jar](https://maven.zohodl.com/com/zoho/crm/zohocrmsdk-4-0/3.0.0/zohocrmsdk-4-0-3.0.0.jar)
 
-For including the latest [version](https://github.com/zoho/zohocrm-java-sdk-4.0/releases/tag/2.0.0) using Maven, include the following in your **pom.xml** file, which will get created once your **Java** project is created using Maven.
+For including the latest [version](https://github.com/zoho/zohocrm-java-sdk-4.0/releases/tag/3.0.0) using Maven, include the following in your **pom.xml** file, which will get created once your **Java** project is created using Maven.
 
     ```xml
     <repositories>
@@ -92,9 +106,9 @@ For including the latest [version](https://github.com/zoho/zohocrm-java-sdk-4.0/
         <dependency>
             <groupId>com.zoho.crm</groupId>
             <artifactId>zohocrmsdk-4-0</artifactId>
-            <version>2.0.0</version>
+            <version>3.0.0</version>
         </dependency>
     </dependencies>
     ```
 
-For more details, kindly refer [here](/versions/2.0.0/README.md).
+For more details, kindly refer [here](/versions/3.0.0/README.md).

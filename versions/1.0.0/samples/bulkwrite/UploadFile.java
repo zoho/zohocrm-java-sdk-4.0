@@ -113,7 +113,7 @@ public class UploadFile
 			Environment environment = USDataCenter.PRODUCTION;
 			Token token = new OAuthToken.Builder().clientID("Client_Id").clientSecret("Client_Secret").refreshToken("Refresh_Token").redirectURL("Redirect_URL").build();
 			new Initializer.Builder().environment(environment).token(token).initialize();
-			String orgID = "673573045";
+			String orgID = "xxxxx";
 			String absoluteFilePath = "/Users/Documents/CRM_SDK/Leads.zip";
 			uploadFile(orgID, absoluteFilePath);
 		}
