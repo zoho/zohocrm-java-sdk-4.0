@@ -25,6 +25,11 @@ License
 
 ## Latest Version
 
+- [5.0.0](/versions/5.0.0/README.md)
+    
+    - Email related records API pagination Issue fixed.
+        - Handled ***next_index*** and ***prev_index*** field datatype.
+
 - [4.0.0](/versions/4.0.0/README.md)
 
     - Records APIs Issue fixed.
@@ -95,10 +100,10 @@ For older versions, please [refer](https://github.com/zoho/zohocrm-java-sdk-4.0/
 ## Including the SDK in your project
 You can include the SDK to your project using:
 - Maven
-- [Gradle](/versions/3.0.0/README.md)
-- [Download SDK jar](https://maven.zohodl.com/com/zoho/crm/zohocrmsdk-4-0/4.0.0/zohocrmsdk-4-0-4.0.0.jar)
+- [Gradle](/versions/5.0.0/README.md)
+- [Download SDK jar](https://maven.zohodl.com/com/zoho/crm/zohocrmsdk-4-0/5.0.0/zohocrmsdk-4-0-5.0.0.jar)
 
-For including the latest [version](https://github.com/zoho/zohocrm-java-sdk-4.0/releases/tag/4.0.0) using Maven, include the following in your **pom.xml** file, which will get created once your **Java** project is created using Maven.
+For including the latest [version](https://github.com/zoho/zohocrm-java-sdk-4.0/releases/tag/5.0.0) using Maven, include the following in your **pom.xml** file, which will get created once your **Java** project is created using Maven.
 
     ```xml
     <repositories>
@@ -111,9 +116,9 @@ For including the latest [version](https://github.com/zoho/zohocrm-java-sdk-4.0/
         <dependency>
             <groupId>com.zoho.crm</groupId>
             <artifactId>zohocrmsdk-4-0</artifactId>
-            <version>4.0.0</version>
+            <version>5.0.0</version>
         </dependency>
     </dependencies>
     ```
 
-For more details, kindly refer [here](/versions/4.0.0/README.md).
+For more details, kindly refer [here](/versions/5.0.0/README.md).
