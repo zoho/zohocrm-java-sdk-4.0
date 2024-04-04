@@ -51,9 +51,9 @@ public class SendMail
 			template.setId(44024810L);
 			mail.setTemplate(template);
 			userAddressFrom.setUserName("username");
-			userAddressFrom.setEmail("abc@gmail.com");
+			userAddressFrom.setEmail("abc@zoho.com");
 			userAddressTo.setUserName("username1");
-			userAddressTo.setEmail("abc1@gmail.com");
+			userAddressTo.setEmail("abc1@zoho.com");
 			userAddressCc.setUserName("username2");
 			userAddressCc.setEmail("abc2@zoho.com");
 			userAddressBcc.setUserName("username3");
