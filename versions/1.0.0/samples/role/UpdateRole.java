@@ -36,7 +36,7 @@ public class UpdateRole
 		role.setDescription("Schedule and manage resources");
 		role.setShareWithPeers(true);
 		MinifiedUser forecastManager = new MinifiedUser();
-//		forecastManager.setEmail("abc@gmail.com");
+//		forecastManager.setEmail("abc@zoho.com");
 		forecastManager.setId(738964291009L);
 //		forecastManager.setName("name");
 		role.setForecastManager(forecastManager);

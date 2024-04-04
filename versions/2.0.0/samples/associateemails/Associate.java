@@ -35,22 +35,22 @@ public class Associate {
 		for (int i=0; i<1; i++) {
 			AssociateEmail associateEmail = new AssociateEmail();
 			From from = new From();
-			from.setEmail("abc@gmail.com");
+			from.setEmail("abc@zoho.com");
 			from.setUserName("user_name");
 			associateEmail.setFrom(from);
 			List<To> tos  = new ArrayList<>();
 			To to = new To();
-			to.setEmail("abc1@gmail.com");
+			to.setEmail("abc1@zoho.com");
 			to.setUserName("user_name1");
 			tos.add(to);
 			List<To> tos1  = new ArrayList<>();
 			To to1 = new To();
-			to1.setEmail("abc2@gmail.com");
+			to1.setEmail("abc2@zoho.com");
 			to1.setUserName("user_name2");
 			tos1.add(to1);
 			List<To> tos2  = new ArrayList<>();
 			To to2 = new To();
-			to2.setEmail("abc3@gmail.com");
+			to2.setEmail("abc3@zoho.com");
 			to2.setUserName("user_name3");
 			tos2.add(to2);
 			associateEmail.setTo(tos);

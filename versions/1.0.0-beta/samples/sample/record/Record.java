@@ -3242,7 +3242,7 @@ public class Record
 
 		Participants participant1 = new Participants();
 
-		participant1.setEmail("abc@gmail.com");
+		participant1.setEmail("abc@zoho.com");
 
 		participant1.setType("email");
 
@@ -4338,7 +4338,7 @@ public class Record
 
 //		paramInstance.add(SearchRecordsParam.CRITERIA, "(External:in:TestExternal221)");
 
-		paramInstance.add(SearchRecordsParam.EMAIL, "abc@gmail.com");
+		paramInstance.add(SearchRecordsParam.EMAIL, "abc@zoho.com");
 
 		paramInstance.add(SearchRecordsParam.PHONE, "234567890");
 
