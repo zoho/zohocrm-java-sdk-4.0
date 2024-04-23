@@ -30,6 +30,8 @@ public class GetDownloadAttachmentsDetails
 		ParameterMap paramInstance = new ParameterMap();
 		paramInstance.add(GetDownloadAttachmentsDetailsParam.USER_ID, userId);
 		paramInstance.add(GetDownloadAttachmentsDetailsParam.MESSAGE_ID, messageId);
+		paramInstance.add(new Param<String>("id", "String"), id);
+		paramInstance.add(new Param<String>("name", "String"), name); 
 
 		APIResponse<ResponseHandler> response = downloadAttachmentsOperations.getDownloadAttachmentsDetails(recordId, module, paramInstance);
 
