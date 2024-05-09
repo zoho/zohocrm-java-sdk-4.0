@@ -1,4 +1,4 @@
-package downloadattachments;
+package downloadAttachments;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -9,6 +9,7 @@ import java.util.Map;
 import com.zoho.api.authenticator.OAuthToken;
 import com.zoho.api.authenticator.Token;
 import com.zoho.crm.api.Initializer;
+import com.zoho.crm.api.Param;
 import com.zoho.crm.api.ParameterMap;
 import com.zoho.crm.api.dc.USDataCenter;
 import com.zoho.crm.api.dc.DataCenter.Environment;
@@ -23,13 +24,15 @@ import com.zoho.crm.api.util.StreamWrapper;
 
 public class GetDownloadAttachmentsDetails
 {
-	public static void getDownloadAttchmentDetails(String module, Long recordId, Long userId, String messageId, String destinationFolder) throws Exception
+	public static void getDownloadAttchmentDetails(String module, Long recordId, Long userId, String messageId, String attachmentId, String fileName, String destinationFolder) throws Exception
 	{
 		DownloadAttachmentsOperations downloadAttachmentsOperations = new DownloadAttachmentsOperations();
 
 		ParameterMap paramInstance = new ParameterMap();
 		paramInstance.add(GetDownloadAttachmentsDetailsParam.USER_ID, userId);
 		paramInstance.add(GetDownloadAttachmentsDetailsParam.MESSAGE_ID, messageId);
+		paramInstance.add(new Param<String>("id", "String"), attachmentId);
+		paramInstance.add(new Param<String>("name", "String"), fileName); 
 
 		APIResponse<ResponseHandler> response = downloadAttachmentsOperations.getDownloadAttachmentsDetails(recordId, module, paramInstance);
 
@@ -99,7 +102,9 @@ public class GetDownloadAttachmentsDetails
 			Long userId = 440248254001L;
 			String messageId = "c6085fae06cbd7b75001d80ffef3323dfaa72e5488";
 			String destinationFolder = "/Users/java-sdk-sample/file";
-			getDownloadAttchmentDetails(module, recordId, userId, messageId, destinationFolder);
+			String name = "";
+			String id = "";
+			getDownloadAttchmentDetails(module, recordId, userId, messageId, id, name, destinationFolder);
 		}
 		catch (Exception e)
 		{
