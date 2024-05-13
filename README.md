@@ -25,6 +25,11 @@ License
 
 ## Latest Version
 
+- [7.0.0](/versions/7.0.0/README.md)
+
+    - Updated Fields meta handling in Utility and ModuleFieldsHandler class.
+    - Added new id and name param in GetDownloadAttachmentsDetailsParam class.
+
 - [6.1.0](/versions/6.1.0/README.md)
     
     - Support move_attachments_to field in LeadConverter class.
@@ -108,10 +113,10 @@ For older versions, please [refer](https://github.com/zoho/zohocrm-java-sdk-4.0/
 ## Including the SDK in your project
 You can include the SDK to your project using:
 - Maven
-- [Gradle](/versions/6.1.0/README.md)
-- [Download SDK jar](https://maven.zohodl.com/com/zoho/crm/zohocrmsdk-4-0/6.1.0/zohocrmsdk-4-0-6.1.0.jar)
+- [Gradle](/versions/7.0.0/README.md)
+- [Download SDK jar](https://maven.zohodl.com/com/zoho/crm/zohocrmsdk-4-0/7.0.0/zohocrmsdk-4-0-7.0.0.jar)
 
-For including the latest [version](https://github.com/zoho/zohocrm-java-sdk-4.0/releases/tag/6.1.0) using Maven, include the following in your **pom.xml** file, which will get created once your **Java** project is created using Maven.
+For including the latest [version](https://github.com/zoho/zohocrm-java-sdk-4.0/releases/tag/7.0.0) using Maven, include the following in your **pom.xml** file, which will get created once your **Java** project is created using Maven.
 
     ```xml
     <repositories>
@@ -124,9 +129,9 @@ For including the latest [version](https://github.com/zoho/zohocrm-java-sdk-4.0/
         <dependency>
             <groupId>com.zoho.crm</groupId>
             <artifactId>zohocrmsdk-4-0</artifactId>
-            <version>6.1.0</version>
+            <version>7.0.0</version>
         </dependency>
     </dependencies>
     ```
 
-For more details, kindly refer [here](/versions/6.1.0/README.md).
+For more details, kindly refer [here](/versions/7.0.0/README.md).
