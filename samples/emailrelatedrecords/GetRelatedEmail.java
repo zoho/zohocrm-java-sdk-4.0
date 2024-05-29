@@ -25,9 +25,9 @@ import com.zoho.crm.api.util.Model;
 
 public class GetRelatedEmail
 {
-	public static void getRelatedEmail(String moduleAPIName, Long id, String messageId, String type, String index, String ownerId) throws Exception
+	public static void getRelatedEmail(String moduleAPIName, Long id, String messageId) throws Exception
 	{
-		EmailRelatedRecordsOperations emailTemplatesOperations = new EmailRelatedRecordsOperations(id, moduleAPIName, type, index, ownerId);
+		EmailRelatedRecordsOperations emailTemplatesOperations = new EmailRelatedRecordsOperations(id, moduleAPIName, null, null, null);
 		APIResponse<ResponseHandler> response = emailTemplatesOperations.getRelatedEmail(messageId);
 		if (response != null)
 		{
@@ -136,32 +136,6 @@ public class GetRelatedEmail
 							}
 						}
 					}
-					Info info = responseWrapper.getInfo();
-					if (info != null)
-					{
-						if (info.getCount() != null)
-						{
-							System.out.println("Record Info Count: " + info.getCount().toString());
-						}
-						if (info.getNextIndex() != null)
-						{
-							System.out.println("Record Info NextIndex: " + info.getNextIndex().toString());
-						}
-
-						if (info.getPrevIndex() != null)
-						{
-							System.out.println("Record Info PrevIndex: " + info.getPrevIndex().toString());
-						}
-
-						if (info.getPerPage() != null)
-						{
-							System.out.println("Record Info PerPage: " + info.getPerPage().toString());
-						}
-						if (info.getMoreRecords() != null)
-						{
-							System.out.println("Record Info MoreRecords: " + info.getMoreRecords().toString());
-						}
-					}
 				}
 				else if (responseHandler instanceof APIException)
 				{
@@ -199,10 +173,7 @@ public class GetRelatedEmail
 			String moduleAPIName = "Leads";
 			Long Id = 4402481103140L;
 			String messageId = "c6085f1f66ec2089a19d1a0149bbe5cff03fe";
-			String type = "user_emails";
-			String index = "487a357e145f231c01809c86faabb8ce0d9236a16fe897";
-			String ownerId = "347021";
-			getRelatedEmail(moduleAPIName, Id, messageId, type, index, ownerId);
+			getRelatedEmail(moduleAPIName, Id, messageId);
 		}
 		catch (Exception e)
 		{
